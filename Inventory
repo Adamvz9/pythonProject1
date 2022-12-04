@@ -1,0 +1,24 @@
+inventory = {}
+Magic = 50
+courage = 50
+health = 50
+
+Weapon = input("pick a weapon choose between 1, 2 and 3")
+
+if Weapon == '1':
+    inventory["Weapon"] = "Dagger"
+    Courage = 100
+    print("with this dagger your courage increases to 100%")
+
+elif Weapon == '2':
+    Magic = 75
+    print ("With this book of the great mage your magic increases to 75%")
+
+elif Weapon == '3':
+    health = 100
+    print("With this thunder gun your health increases to a 100%")
+
+else:
+    print("please choose a option you actually have")
+
+print(inventory)
