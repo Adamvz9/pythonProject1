@@ -1,0 +1,9 @@
+Diction = {}
+
+i = 1;
+
+while i <= 20:
+    Diction[i] = i * i
+    i = i + 1
+
+print (Diction)
