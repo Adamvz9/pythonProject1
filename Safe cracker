@@ -1,0 +1,28 @@
+import random
+safe_code = []
+while len(safe_code) < 3:
+    code = random.randint(3, 12)
+    if code not in safe_code:
+        safe_code.append(code)
+print(safe_code)
+
+codes_cracked = 0
+
+while codes_cracked < len(safe_code):
+    for code in safe_code:
+        print("Enter a pair of numbers that divide to %d" % code)
+        try:
+            numb1 = int(input("1st number:"))
+            numb2 = int(input("2nd number:"))
+            result = numb1 / numb2
+            if result == code:
+                print("Code cracked")
+                codes_cracked += 1
+
+        except ValueError:
+            print("that is not a number")
+            break;
+
+else:
+    print("you have opened the safe")
+
