@@ -1,0 +1,10 @@
+a_list = [12, 6, 5, 3]
+
+reversedList = []
+
+for i in range(len(a_list)) :
+  reversedList.append(a_list[len(a_list) - i - 1])
+
+print(f'Original List : {a_list}')
+print(f'Reversed List : {reversedList}')
+
